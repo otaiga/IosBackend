@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, "ios_backend"
-set :repository,  "git@github.com:YOUR GITHUB REPO"
+set :repository,  "git@github.com:otaiga/IosBackend.git"
 
 set :scm, :git
 server "ec2-54-247-25-8.eu-west-1.compute.amazonaws.com", :web, :app, :db, :primary => true
