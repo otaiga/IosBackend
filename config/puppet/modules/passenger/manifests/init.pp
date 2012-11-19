@@ -17,7 +17,7 @@ class passenger {
       unless  => "ls /var/lib/gems/1.9.1/gems/\
       passenger-3.0.11/ext/apache2/mod_passenger.so"
   }
-
+  
   file {
     "/etc/apache2/conf.d/passenger.conf":
       mode    => 644,
