@@ -5,4 +5,6 @@ IosBackend::Application.routes.draw do
 
   resources :members
 
+  resources :infos, :only => [:index]
+
 end
