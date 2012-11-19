@@ -16,7 +16,7 @@ class apache2 {
       mode   => 644,
       owner  => root,
       group  => root;
-    "/etc/apache2/sites-enabled/ios_backend.conf":
+    "/etc/apache2/sites-enabled/ios_backend":
       source => "puppet:///modules/apache2/ios_backend.conf",
       mode   => 644,
       owner  => root,

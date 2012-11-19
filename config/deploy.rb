@@ -4,7 +4,7 @@ set :application, "ios_backend"
 set :repository,  "git@github.com:otaiga/IosBackend.git"
 
 set :scm, :git
-server "ec2-54-247-25-8.eu-west-1.compute.amazonaws.com", :web, :app, :db, :primary => true
+server "ec2-176-34-217-167.eu-west-1.compute.amazonaws.com", :web, :app, :db, :primary => true
 ssh_options[:keys] = "~/.ssh/ios_backend.pem"  #(If an AWS etc)
 
 set :deploy_to, "/var/app/ios_backend" 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-host="${1:-ubuntu@ec2-54-247-25-8.eu-west-1.compute.amazonaws.com}"
+host="${1:-ubuntu@ec2-176-34-217-167.eu-west-1.compute.amazonaws.com}"
 ssh-keygen -R "${host#*@}" 2> /dev/null
 
 scp -i ~/.ssh/ios_backend.pem -r config/puppet $host:/home/ubuntu/
