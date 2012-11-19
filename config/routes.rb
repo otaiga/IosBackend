@@ -3,6 +3,6 @@ IosBackend::Application.routes.draw do
 
   root :to => 'mains#index'
 
-  resources :users
+  resources :members
 
 end

@@ -3,8 +3,8 @@
 host="${1:-ubuntu@ec2-54-247-25-8.eu-west-1.compute.amazonaws.com}"
 ssh-keygen -R "${host#*@}" 2> /dev/null
 
-scp -i ~/.ssh/app.pem -r config/puppet $host:/home/ubuntu/
-ssh -i ~/.ssh/app.pem "$host" '
+scp -i ~/.ssh/ios_backend.pem -r config/puppet $host:/home/ubuntu/
+ssh -i ~/.ssh/ios_backend.pem "$host" '
 sudo apt-get update
 sudo apt-get install -y libyaml-dev
 sudo apt-get install -y curl git-core bzip2 build-essential zlib1g-dev libssl-dev
